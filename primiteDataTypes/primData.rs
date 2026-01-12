@@ -22,4 +22,12 @@ fn main(){
 
   let pi:f64 = 3.14;
   println!("Floating point data type: {}", pi);
+
+  // Boolean values: true, false
+  let is_snowing: bool = true;
+  println!("Is it snowing? {}", is_snowing);
+
+  // Character Type - char
+  let letter:char = '-';
+  println!("Char alphabet: {}", letter);
 }
