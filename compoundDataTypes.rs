@@ -14,5 +14,11 @@ fn main() {
   println!("Array: {:?}", numbers);
   // {:?} is one of many ways to express it
 
+  let fruits:[&str; 3] = ["Apple", "Banana", "Orange"];
+
+  println!("Fruits: {:?}", fruits);
+  println!("Fruits: {}", fruits[0]);
+  println!("Fruits: {}", fruits[1]);
+  println!("Fruits: {}", fruits[2]);
 }
 
