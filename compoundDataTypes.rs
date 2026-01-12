@@ -20,5 +20,18 @@ fn main() {
   println!("Fruits: {}", fruits[0]);
   println!("Fruits: {}", fruits[1]);
   println!("Fruits: {}", fruits[2]);
+
+  // Tuples
+  // Tuples are heterogenous elements of fixed size
+  let human: (String, i32, bool) = ("Alice".to_string(), 30, false);
+  println!("Human Tuple: {:?}", human);
+  // String literals are not strings, need .to_string method
+
+  let mixedTuple = ("James", 23, true, [1, 2, 3, 4, 5, 6]);
+  println!("Mixed Tuple: {:?}", mixedTuple);
+
+  // Slices = [1, 2, 3, 4, 5]
+  let numberSlices:&[i32] = &[1, 2, 3, 4, 5];
+  println!("Number Slice: {:?}", numberSlices);
 }
 
