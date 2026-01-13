@@ -33,5 +33,31 @@ fn main() {
   // Slices = [1, 2, 3, 4, 5]
   let numberSlices:&[i32] = &[1, 2, 3, 4, 5];
   println!("Number Slice: {:?}", numberSlices);
-}
 
+  let animal_slices:&[&str] = &["Lion", "Elephant", "Crocodile"];
+  println!("Animal slices: {:?}", animal_slices);
+
+  let book_slices:&[&String] = &[&"IT".to_string(), &"Harry Potter".to_string(), &"Lord of the Rings".to_string()];
+  println!("Book slices: {:?}", book_slices);
+
+  /* String vs String Slice
+     String is growable/mutable. They are called owned
+     Rust is great for speed and low-level trade off 
+     Any data type in rust is immutable*/
+
+     let mut stone_cold:String = String::from("Hell "); // This is stored in the heap
+     println!("Stone Cold Says: {}", stone_cold);
+     stone_cold.push_str("Yeah!");
+     println!("Stone Cold Says: {}", stone_cold);
+
+     // &str is a string slice/ reference
+
+     let string:String = String::from("Hello, World!");
+     let slice:&str = &string[0..5];
+
+     println!("String: {}", string);
+     println!("Slice Value: {}", slice);
+     println!("Slice Value: {:?}", slice);
+
+
+}
